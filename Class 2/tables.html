@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Table is used to diplay some sort of tabular date -->
+    <!-- Not advisable to use border in the table tag -->
+    <!-- It doesn't matter the placement of the colgroup tag, it shoulb be present inside the table tag -->
+    <!-- To specify the title of the table we use caption tag -->
+    <table border="1">
+      <caption>
+        Employee Table
+      </caption>
+      <!-- <colgroup>
+        <col span="2" style="background-color: aqua" />
+      </colgroup> -->
+      <thead>
+        <tr>
+          <th>Employee No</th>
+          <th>Employee Name</th>
+          <th>Designation</th>
+          <th>Tenure in Company</th>
+        </tr>
+      </thead>
+      <tdata>
+        <tr>
+          <td>001</td>
+          <td>Ramesh</td>
+          <td>CEO</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>002</td>
+          <td>Suresh</td>
+          <td>CTO</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>003</td>
+          <td>Ganesh</td>
+          <td>Director</td>
+          <td>1</td>
+        </tr>
+      </tdata>
+      <colgroup>
+        <col span="2" style="background-color: aqua" />
+      </colgroup>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Forms: The purpose of form to collect the user data/login/register etc.. -->
+    <!-- Categories/types of Forms:
+    1) text fields - to input text data(Name, email, address)
+    2) password - (******** - masked text field)
+    3) Date filed - (date of birth, remainder date)
+    4) check box - (Accept terms and conditions)
+    5) dropdown/select - to select from a lsit of itmes
+    6) radio buttons - (@ male, @ female, @ other - select single option from multiples)
+    7) file field - (pdf, word, img to upload a particular file)
+    8) submit - (to submit the data) -->
+    <form>
+      <!-- Plain text field -->
+      <div>
+        <label>Name</label>
+        <input required type="text" />
+      </div>
+
+      <!-- To input a password -->
+      <div>
+        <label>Password</label>
+        <input type="password" />
+      </div>
+      <!-- right click on browser and click on inspect and go to elemets tab we can see entire html structure then at the top corner select the select icon and select the password label and change the input type to text to see password entered -->
+
+      <!-- To ipnut an email -->
+      <div>
+        <label>Email</label>
+        <input type="email" />
+      </div>
+      <!-- for validation we need to use input type as email fro email filed we can also use text as input type -->
+
+      <!-- To input Age -->
+
+      <label>Age</label>
+      <input type="number" min="16" max="100" />
+
+      <!-- To restrict length of text filed  -->
+      <div>
+        <label>Password</label>
+        <input type="password" minlength="8" maxlength="10" />
+      </div>
+
+      <!-- To input date -->
+
+      <!-- yyyy-mm-dd format of min (to set remainder only to future dates)  -->
+      <!-- min arribute is to select future date from current data and max attribute is limit the date to the value mentioned in the max attribute -->
+      <label>Date</label>
+      <input type="date" min="2023-09-09" max="2023-09-14" />
+
+      <!--Checkbox  is generally used to select multiple items-->
+
+      <!-- <label>Favourite cuisine</label>
+      <input type="checkbox" />
+      this is wrong -->
+
+      <p>Favourite Cuisine</p>
+      <label>Indian</label>
+      <input type="checkbox" />
+      <label>Chinese</label>
+      <input type="checkbox" />
+      <label>Japanese</label>
+      <input type="checkbox" />
+      <label>Continental</label>
+      <input type="checkbox" />
+
+      <!-- To input for radio button 
+      Radio buttons are used to select single item but be sure to use same name-->
+      <p>Favourite Cuisine</p>
+      <label>Indian</label>
+      <input type="radio" />
+      <label>Chinese</label>
+      <input type="radio" />
+      <label>Japanese</label>
+      <input type="radio" />
+      <label>Continental</label>
+      <input type="radio" />
+
+      <!-- Here we can select all the radio buttons but we want to slect only one  this can be elemenated by using name attribute-->
+      <p>Favourite Cuisine</p>
+      <label>Indian</label>
+      <input type="radio" name="Cuisine" />
+      <label>Chinese</label>
+      <input type="radio" name="Cuisine" />
+      <label>Japanese</label>
+      <input type="radio" name="Cuisine" />
+      <label>Continental</label>
+      <input type="radio" name="Cuisine" />
+
+      <!-- see when we give different values to name attribute see what happens -->
+      <p>Favourite Cuisine</p>
+      <label>Indian</label>
+      <input type="radio" name="Cuisine I" />
+      <label>Chinese I</label>
+      <input type="radio" name="Cuisine II" />
+      <label>Chinese II</label>
+      <input type="radio" name="Cuisine II" />
+      <label>Japanese</label>
+      <input type="radio" name="CuisineI II" />
+      <label>Continental</label>
+      <input type="radio" name="Cuisine IV" />
+
+      <!-- To select/dropdown -->
+      <label>Country</label>
+      <select>
+        <option>Select</option>
+        <option>India</option>
+        <option>Australia</option>
+        <option>Us</option>
+        <option>UK</option>
+      </select>
+
+      <!-- To input color -->
+      <label>Color</label>
+      <input type="color" />
+      <!-- input type color is Used to change the thene of the web site and profile panel -->
+
+      <!-- To submit -->
+      <label>Submit</label>
+      <input type="submit" />
+
+      <button type="submit">Submit</button>
+      <!-- Generally advisable to use labet for submit -->
+
+      <!-- to input file -->
+      <div>
+        <label>File</label>
+        <input type="file" />
+      </div>
+    </form>
+  </body>
+</html>
