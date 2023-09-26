@@ -1,0 +1,5 @@
+/* As it is selecting an element (h2) on the page, it is an element selector */
+h2 {
+  background-color: aquamarine;
+  color: blue;
+}

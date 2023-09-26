@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      /* element selector */
+
+      /* h2 {
+        color: blue;
+      }
+      span {
+        color: brown;
+      } */
+
+      /* descendent selector  both will work as same*/
+      /* Descendant Selector
+      element*space*descendent_element{
+      } */
+      /* div div span {
+        color: blueviolet;
+      } */
+      /* div span {
+        color: blueviolet;
+      } */
+
+      /* Child selector */
+      /* Child Selector
+      element*space*>*space*descendent_element{
+      } */
+
+      /* div > p {
+        color: blue;
+      }
+
+      article > p {
+        color: blueviolet;
+      } */
+
+      /* Class selector */
+      div p {
+        color: blue;
+      }
+      .class-a {
+        color: greenyellow;
+      }
+      .class-b {
+        background-color: red;
+      }
+
+      /* Id selector */
+
+      #para1 {
+        color: blue;
+      }
+
+      /* Attribute selector */
+      input[type="text"]{
+        background-color: red;
+      }
+
+      /* Pseduo Selector */
+      a:hover{
+        color: orange;
+      }
+      #link1:hover{
+        color: red;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <!-- Hoe to apply CSS
+    1) Inline CSS - ex:
+    <p style="color: brown">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et sequi in,
+      quod maiores laborum adipisci quam ipsa, eveniet perferendis delectus
+      aliquam? Voluptas, earum eius culpa eaque temporibus necessitatibus
+      impedit quod?
+    </p>
+
+    2) Internal CSS - Add style tag inside head tag 
+    3) External CSS - Write CSS in a different file and link that file in HTML file -->
+
+    <!-- <p style="background-color: red">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, nulla
+      voluptate dicta temporibus sit tempore. Itaque, reprehenderit accusamus!
+      Sint beatae debitis corrupti veritatis magni excepturi minus nesciunt
+      odit, veniam impedit?
+    </p>
+
+    <h1 style="background-color: aqua">This is a boring H1</h1>
+
+    <h2>Another heading h2 tag</h2>
+
+    <h2>One more heading H2 tag</h2> -->
+
+    <!-- Descendent selector & child selector examples -->
+
+    <!-- <span>Another span here</span> -->
+
+    <!-- <div>
+      <p>I'm a direct child</p>
+      <!-- Child of div-->
+      <article>
+        <span> I'm a span </span>
+        <p>I'm a indirect child</p>
+      </article>
+      <p>I'm a paragraph</p>
+      <!-- Child of div-->
+    </div> -->
+
+    <!-- class selector examples -->
+
+    <!-- <div>
+      <p class="class-a class-b">I belong to class A</p>
+      <p>I belong to class B</p>
+      <p>I belong to class C</p>
+      <div>
+        <p class="class-a">I belong to class A</p>
+      </div>
+    </div> -->
+
+    <!-- ID selector examples
+    One class have multiple elements associated
+    Id is unique to a single element -->
+
+    <!-- <div>
+      <p id="para1">I'm a special uniques P</p>
+      <p id="para1">I'm a another special uniques P</p>
+    </div> -->
+
+    <!-- Attribute Selectors -->
+    <!-- <form>
+      <label>Text Input</label>
+      <input type="text">
+      <label>Password Input</label>
+      <input type="password">
+    </form> -->
+
+    <!-- Pseduo Selector -->
+    <a href="#" id="link1">Click Me</a> <!--by default the color of anhor tag is blue-->
+    <a href="#">Click Me Two</a>
+  </body>
+</html>
